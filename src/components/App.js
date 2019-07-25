@@ -1,13 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import HeaderSection from "../components/HeaderSection";
+import BodySection from "../components/BodySection";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Navbar />
       <HeaderSection />
-    </div>
+      <BodySection />
+    </React.Fragment>
   );
 }
 

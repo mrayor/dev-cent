@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 const HeaderSection = () => {
   return (
-    <div>
+    <React.Fragment>
       <div
         style={{
           background: `linear-gradient(rgba(20, 20, 20, .5),rgba(20, 20, 20, .5)),url(${headerImage})`,
@@ -32,7 +32,7 @@ const HeaderSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 
