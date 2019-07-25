@@ -18,6 +18,6 @@ const Feature = props => {
 Feature.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  icon: PropTypes.element.isRequired
+  icon: PropTypes.string.isRequired
 };
 export default Feature;
