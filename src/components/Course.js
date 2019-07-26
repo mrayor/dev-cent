@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Course = props => {
   return (
-    <div className="flex-shrink-0 max-w-sm rounded shadow-lg mx-4">
+    <div className={props.class}>
       <img className="w-full" src={props.image} alt="pictures" />
       <div className="px-6 py-4 flex justify-between">
         <span className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
@@ -23,11 +23,16 @@ const Course = props => {
   );
 };
 
+Course.defaultProps = {
+  class: "flex-shrink-0 max-w-sm rounded shadow-lg mx-4"
+};
+
 Course.propTypes = {
   image: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
+  content: PropTypes.string.isRequired,
+  class: PropTypes.string.isRequired
 };
 export default Course;

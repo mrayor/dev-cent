@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="fixed min-w-full container mx-auto py-2 flex justify-between items-center bg-white shadow-md">
+    <div className="fixed min-w-full container mx-auto py-2 flex justify-between items-center bg-white shadow-md z-10">
       <div>
         <Link to="/">
           <svg xmlns="http://www.w3.org/2000/svg" width="180" height="40">
