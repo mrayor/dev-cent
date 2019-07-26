@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto py-2 flex justify-between items-center">
+    <div className="fixed min-w-full container mx-auto py-2 flex justify-between items-center bg-white shadow-md">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="180" height="40">
           <g transform="translate(-20 -10)">
@@ -26,7 +26,7 @@ const Navbar = () => {
           </g>
         </svg>
       </div>
-      <div>
+      <div className="hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="27.169" height="19.08">
           <g fill="none" stroke="#000" strokeWidth="1.5" data-name="Group 1">
             <path d="M0 .75h27.169" data-name="Line 1" />

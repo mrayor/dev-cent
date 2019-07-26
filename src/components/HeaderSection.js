@@ -15,7 +15,7 @@ const HeaderSection = () => {
         className="rounded-b-large bg-no-repeat bg-cover"
       >
         {" "}
-        <div className="container mx-auto py-2 flex-col justify-between items-center">
+        <div className="pt-20 container mx-auto py-2 flex-col justify-between items-center">
           <div className="tracking-tight text-white p-4 ">
             <h1 className="text-3xl font-extrabold">- better education</h1>
             <h2 className="text-3xl -mt-3 font-normal">for a better world</h2>

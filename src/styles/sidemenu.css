@@ -1,0 +1,77 @@
+#App {
+  height: 100vh;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: black;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: gray;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 330px;
+  top: 20px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  top: 15px !important;
+}
+
+.bm-menu {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: black;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 320px) {
+  .bm-burger-button {
+    left: 270px;
+  }
+}
+@media (min-width: 360px) {
+  .bm-burger-button {
+    left: 310px;
+  }
+}
+@media (min-width: 411px) {
+  .bm-burger-button {
+    left: 350px;
+  }
+}
+@media (min-width: 425px) {
+  .bm-burger-button {
+    left: 360px;
+  }
+}
