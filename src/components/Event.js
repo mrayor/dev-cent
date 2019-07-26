@@ -16,7 +16,7 @@ const Event = props => {
       className="bg-no-repeat bg-cover max-w-sm"
     >
       {" "}
-      <div className="container mx-auto py-2 flex-col justify-between items-center">
+      <div className="container mx-auto py-2 mb-8 flex-col justify-between items-center">
         <div className="tracking-tight text-white p-4 ">
           <h1 className="text-3xl font-extrabold">{props.title}</h1>
           <p className="text-sm font-normal leading-1">{props.date}</p>
