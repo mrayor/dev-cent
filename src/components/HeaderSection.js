@@ -1,6 +1,6 @@
 import React from "react";
 import headerImage from "../images/headerImage.png";
-import Button from "../components/Button";
+import Button from "./Button";
 
 const HeaderSection = () => {
   return (

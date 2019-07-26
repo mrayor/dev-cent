@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import HeaderSection from "../components/HeaderSection";
-import BodySection from "../components/BodySection";
+import Navbar from "./Navbar";
+import HeaderSection from "./HeaderSection";
+import BodySection from "./BodySection";
 
 function App() {
   return (

@@ -5,7 +5,7 @@ class Button extends Component {
   render() {
     return (
       <React.Fragment>
-        <button className="rounded-large bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 flex items-center">
+        <button className={this.props.class}>
           <div className="text-sm font-medium">{this.props.name}</div>
           <div className="ml-3">
             <i>
@@ -29,10 +29,13 @@ class Button extends Component {
 }
 
 Button.defaultProps = {
-  name: "Submit"
+  name: "Submit",
+  class:
+    "rounded-large bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 flex items-center"
 };
 Button.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  class: PropTypes.string.isRequired
 };
 
 export default Button;
