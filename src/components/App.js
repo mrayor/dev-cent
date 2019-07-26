@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import HeaderSection from "./HeaderSection";
 import BodySection from "./BodySection";
+import UpcomingEventsSection from "./UpcomingEventsSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <HeaderSection />
       <BodySection />
+      <UpcomingEventsSection />
     </React.Fragment>
   );
 }
