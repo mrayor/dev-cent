@@ -1,8 +1,8 @@
 import React from "react";
-import booksImage from "../images/booksImage.png";
-import Feature from "./Feature";
-import icon from "../images/icon.svg";
-import TopCourseSection from "./TopCourseSection";
+import booksImage from "../../images/booksImage.png";
+import Feature from "../Feature";
+import icon from "../../images/icon.svg";
+import TopCourseSection from "../sections/TopCourseSection";
 
 const BodySection = () => {
   return (

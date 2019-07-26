@@ -1,10 +1,13 @@
 import React from "react";
-import event from "../images/event.png";
-import Event from "./Event";
+import event from "../../images/event.png";
+import Event from "../Event";
 
 const UpcomingEventsSection = () => {
   return (
-    <div className="container items-center bg-gray-100 pb-4">
+    <div
+      id="upcoming-events"
+      className="container items-center bg-gray-100 pb-4"
+    >
       <div className="p-4">
         <div className="my-5">
           <h3 className="font-bold text-3xl">upcoming</h3>

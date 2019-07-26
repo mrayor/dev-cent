@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
 
 const SidebarMenu = () => {
@@ -26,35 +27,29 @@ const SidebarMenu = () => {
       <div className="flex">
         <div>
           <p className="mb-5">
-            <a className="menu-item border-b-2 hover:border-red-600" href="/">
+            <Link
+              className="menu-item border-b-2 hover:border-red-600"
+              to="/about"
+            >
               About Us
-            </a>
+            </Link>
           </p>
           <p className="mb-5">
-            {" "}
-            <a
+            <Link
               className="menu-item border-b-2 hover:border-red-600"
-              href="/laravel"
-            >
-              Upcoming Events
-            </a>
-          </p>{" "}
-          <p className="mb-5">
-            <a
-              className="menu-item border-b-2 hover:border-red-600"
-              href="/angular"
+              to="/courses"
             >
               All Courses
-            </a>
+            </Link>
           </p>
           <p className="mb-5">
             {" "}
-            <a
+            <Link
               className="menu-item border-b-2 hover:border-red-600"
-              href="/vue"
+              to="/enroll"
             >
               Enroll for Summer Camp
-            </a>
+            </Link>
           </p>
         </div>
       </div>

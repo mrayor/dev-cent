@@ -1,7 +1,7 @@
 import React from "react";
-import image from "../images/ai-image.png";
-import Course from "./Course";
-import Button from "./Button";
+import image from "../../images/ai-image.png";
+import Course from "../Course";
+import Button from "../Button";
 
 const TopCourseSection = () => {
   return (
