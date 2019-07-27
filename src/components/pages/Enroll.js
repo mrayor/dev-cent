@@ -1,10 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import code from "../../images/code.png";
+import CourseHeaderSection from "../sections/CourseHeaderSection";
+import EnrollForm from "../sections/EnrollForm";
 
 const Enroll = () => {
   return (
-    <div className="container mx-auto pt-20">
-      <h1>Enroll Page</h1>
-    </div>
+    <React.Fragment>
+      <CourseHeaderSection
+        image={code}
+        title="HTML and CSS for web developers"
+      />
+      <div className="container my-2">
+        <Link to="/courses" className="text-lg hover:text-red-600">
+          {" "}
+          go back
+        </Link>
+        <EnrollForm />
+      </div>
+    </React.Fragment>
   );
 };
 
