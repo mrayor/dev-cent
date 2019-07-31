@@ -13,25 +13,23 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <React.Fragment>
-      <Router>
-        <div id="App">
-          <SidebarMenu />
-          <div>
-            <Navbar />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/courses" component={Courses} />
-              <Route exact path="/enroll" component={Enroll} />
-              <Route exact path="/courses/course" component={Course} />
-              <Route component={NotFound} />
-            </Switch>
-            <Footer />
-          </div>
+    <Router>
+      <div id="App">
+        <SidebarMenu />
+        <div>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/courses" component={Courses} />
+            <Route exact path="/enroll" component={Enroll} />
+            <Route exact path="/courses/course" component={Course} />
+            <Route component={NotFound} />
+          </Switch>
+          <Footer />
         </div>
-      </Router>
-    </React.Fragment>
+      </div>
+    </Router>
   );
 }
 

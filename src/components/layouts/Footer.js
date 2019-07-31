@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="py-4">
@@ -29,32 +29,43 @@ const Footer = () => {
         </div>
         <div className="my-4">
           <h3 className="font-bold text-2xl">Contact Us</h3>
-          <p>info@devnet.com</p>
-          <p>0801 123 4567</p>
+
+          <ul>
+            <li>
+              {" "}
+              <a href="/">info@devnet.com</a>{" "}
+            </li>
+            <li>0801 123 4567</li>
+          </ul>
         </div>
         <div className="my-4">
           <h3 className="font-bold text-2xl">Quick Links</h3>
-          <p>
-            <a href="/">Home</a>
-          </p>
-          <p>
-            <a href="/">About Us</a>
-          </p>
-          <p>
-            <a href="/">FAQ</a>
-          </p>
-          <p>
-            <a href="/">Courses</a>
-          </p>
-          <p>
-            <a href="/">Contact Us</a>
-          </p>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+
+            <li>
+              <Link to="/courses">Courses</Link>
+            </li>
+          </ul>
         </div>
         <div className="my-4">
           <h3 className="font-bold text-2xl">Follow Us</h3>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>Twitter</p>
+          <ul>
+            <li>
+              <a href="https://facebook.com/devcent">Facebook</a>{" "}
+            </li>
+            <li>
+              <a href="https://instagram.com/devcent">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/devcent">Twitter</a>{" "}
+            </li>
+          </ul>
         </div>
         <div className="my-4 border-b-2 -mx-4" />
         <p className="flex justify-center my-2 text-sm">

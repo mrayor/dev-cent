@@ -5,12 +5,10 @@ import BookFeatures from "../BookFeatures";
 
 const BodySection = () => {
   return (
-    <React.Fragment>
-      <div className="container items-center">
-        <BookFeatures />
-        <TopCourseSection />
-      </div>
-    </React.Fragment>
+    <div className="container items-center">
+      <BookFeatures />
+      <TopCourseSection />
+    </div>
   );
 };
 

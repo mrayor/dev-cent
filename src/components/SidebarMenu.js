@@ -24,25 +24,30 @@ const SidebarMenu = () => {
         </svg>
       }
     >
-      <div className="flex">
-        <div>
-          <p className="mb-5">
+      <div>
+        <ul className="mb-5">
+          <li>
             <Link
               className="menu-item border-b-2 hover:border-red-600"
               to="/about"
             >
               About Us
             </Link>
-          </p>
-          <p className="mb-5">
+          </li>
+        </ul>
+        <ul className="mb-5">
+          <li>
             <Link
               className="menu-item border-b-2 hover:border-red-600"
               to="/courses"
             >
               All Courses
             </Link>
-          </p>
-          <p className="mb-5">
+          </li>
+        </ul>
+
+        <ul className="mb-5">
+          <li>
             {" "}
             <Link
               className="menu-item border-b-2 hover:border-red-600"
@@ -50,8 +55,8 @@ const SidebarMenu = () => {
             >
               Enroll for Summer Camp
             </Link>
-          </p>
-        </div>
+          </li>
+        </ul>
       </div>
     </Menu>
   );
