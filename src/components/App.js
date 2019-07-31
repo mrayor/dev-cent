@@ -6,7 +6,7 @@ import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Courses from "./pages/Courses";
+import AllCourses from "./pages/AllCourses";
 import Enroll from "./pages/Enroll";
 import Course from "./pages/Course";
 import NotFound from "./pages/NotFound";
@@ -21,9 +21,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/courses" component={Courses} />
+            <Route exact path="/courses" component={AllCourses} />
             <Route exact path="/enroll" component={Enroll} />
-            <Route exact path="/courses/course" component={Course} />
+            <Route exact path="/courses/:id" component={Course} />
             <Route component={NotFound} />
           </Switch>
           <Footer />
