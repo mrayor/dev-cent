@@ -13,7 +13,7 @@ class Course extends Component {
             {course.category.name}
           </span>
           <span className="rounded-full px-3 py-1 text-sm font-bold text-black mr-2">
-            {course.price}
+            {`₦${course.price}`}
           </span>
         </div>
         <div className="px-6 py-4">

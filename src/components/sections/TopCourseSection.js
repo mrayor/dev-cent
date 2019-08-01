@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import Button from "../Button";
 import CourseSection from "./CourseSection";
 
@@ -11,10 +11,12 @@ const TopCourseSection = props => {
         <h2 className="font-normal text-3xl -mt-3 text-right">courses</h2>
       </div>
       <CourseSection />
-      <Button
-        name="All Courses"
-        class="my-3 mx-auto rounded-large bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 flex items-center"
-      />
+      <Link to="/courses">
+        <Button
+          name="All Courses"
+          class="my-3 mx-auto rounded-large bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 flex items-center"
+        />
+      </Link>
     </React.Fragment>
   );
 };

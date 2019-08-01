@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const Event = props => {
@@ -21,10 +21,12 @@ const Event = props => {
           <h1 className="text-3xl font-extrabold">{props.title}</h1>
           <p className="text-sm font-normal leading-1">{props.date}</p>
           <div className="my-4">
-            <Button
-              name="Enroll now"
-              class="text-white py-2 flex items-center"
-            />
+            <Link to="/courses">
+              <Button
+                name="Enroll now"
+                class="text-white py-2 flex items-center"
+              />
+            </Link>
           </div>
         </div>
       </div>

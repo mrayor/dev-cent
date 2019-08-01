@@ -51,7 +51,7 @@ const SidebarMenu = () => {
             {" "}
             <Link
               className="menu-item border-b-2 hover:border-red-600"
-              to="/enroll"
+              to="/courses"
             >
               Enroll for Summer Camp
             </Link>

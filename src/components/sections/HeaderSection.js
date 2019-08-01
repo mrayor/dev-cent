@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import headerImage from "../../images/headerImage.png";
 import Button from "../Button";
 
@@ -28,7 +29,9 @@ const HeaderSection = () => {
               <h3 className="font-bold">upcoming events:</h3>
               <h1>Summer Camp Training School</h1>
             </div>
-            <Button name="Enroll Now" />
+            <Link to="/courses">
+              <Button name="Enroll Now" />
+            </Link>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import axios from "axios";
 import PropTypes from "prop-types";
 import CourseHeaderSection from "../sections/CourseHeaderSection";
 import CourseDescriptionSection from "../sections/CourseDescriptionSection";
-import CourseOutline from "../CourseOutline";
+import Button from "../Button";
 import CourseDetail from "../CourseDetail";
 
 class Course extends Component {
@@ -22,9 +22,10 @@ class Course extends Component {
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    const res = await axios.get(`http://devcent.test/api/courses/${id}`);
+    const res = await axios.get(` http://devcent.test/api/courses/${id}`);
     const course = res.data;
     this.setState({
+      id: course.id,
       name: course.name,
       description: course.description,
       objectives: course.objectives,
@@ -39,6 +40,7 @@ class Course extends Component {
 
   render() {
     const {
+      id,
       name,
       description,
       objectives,
@@ -68,22 +70,19 @@ class Course extends Component {
               content={eligibility}
             />
           </div>
-          <div className="my-4">
-            <h1 className="font-bold text-3xl">Course Outline</h1>
-            <div className="my-4 border-b-2" />
-          </div>
-          <div className="mb-10">
-            <CourseOutline topic="Introduction to programming" time="2 hrs" />
-          </div>
-          <div className="mb-10">
+
+          <div className="mb-10 my-20">
             <CourseDetail
               val1="Training Instructor"
               val2={trainingInstructor}
             />
-            <CourseDetail val1="Course Fee" val2={`#${price}`} />
+            <CourseDetail val1="Course Fee" val2={`₦${price}`} />
             <CourseDetail val1="Available Seats" val2={availableSeats} />
             <CourseDetail val1="Schedule" val2={schedule} />
           </div>
+          <Link to={`/courses/${id}/enroll`}>
+            <Button name="Enroll Now" />
+          </Link>
         </div>
       </React.Fragment>
     );

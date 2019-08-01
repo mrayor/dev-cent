@@ -13,6 +13,9 @@ class Input extends Component {
             className="w-full bg-white text-gray-700 border border-gray-400 py-3 px-4 mb-3"
             type={this.props.type}
             placeholder={this.props.placeholder}
+            value={this.props.value}
+            name={this.props.name}
+            onChange={this.props.onChange}
           />
         </div>
       </div>
@@ -23,6 +26,7 @@ class Input extends Component {
 Input.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  placeholder: PropTypes.string.isRequired
+  placeholder: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired
 };
 export default Input;
