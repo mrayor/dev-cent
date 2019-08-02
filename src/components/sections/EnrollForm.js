@@ -4,6 +4,7 @@ import DisabledInput from "../DisabledInput";
 import PaymentDropdown from "../PaymentDropdown";
 import Button from "../Button";
 import axios from "axios";
+import ErrorNotification from "../ErrorNotification";
 
 class EnrollForm extends Component {
   state = {
@@ -45,6 +46,8 @@ class EnrollForm extends Component {
     if (res.data.success === false) {
       const error = res.data.response;
       console.log(error);
+
+      this.setState({ errors: error });
     } else {
       //clear state
       this.setState({
@@ -60,10 +63,23 @@ class EnrollForm extends Component {
   };
 
   render() {
-    const { first_name, last_name, email, phone, payment_mode } = this.state;
+    const {
+      first_name,
+      last_name,
+      email,
+      phone,
+      payment_mode,
+      errors
+    } = this.state;
 
     return (
       <div className="mb-10 mt-5">
+        <div>
+          {Object.keys(errors).map((error, key) => (
+            <ErrorNotification error={errors[error]} key={key} />
+          ))}
+        </div>
+
         <Input
           label="First name"
           type="text"
