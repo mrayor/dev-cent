@@ -6,6 +6,7 @@ import EnrollForm from "../sections/EnrollForm";
 
 class Enroll extends Component {
   state = {
+    id: "",
     name: "",
     featured_image: "",
     price: ""
@@ -18,12 +19,13 @@ class Enroll extends Component {
     this.setState({
       name: course.name,
       featured_image: course.featured_image,
-      price: course.price
+      price: course.price,
+      id: course.id
     });
   }
 
   render() {
-    const { name, featured_image, price } = this.state;
+    const { name, featured_image, price, id } = this.state;
     return (
       <React.Fragment>
         <CourseHeaderSection image={featured_image} title={name} />
@@ -32,7 +34,7 @@ class Enroll extends Component {
             {" "}
             go back
           </Link>
-          <EnrollForm price={price} />
+          <EnrollForm price={price} course={name} course_id={id} />
         </div>
       </React.Fragment>
     );

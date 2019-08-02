@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 class PaymentDropdown extends Component {
-  state = {
-    value: "Pay Online"
-  };
-  onChange = e => this.setState({ value: e.target.value });
   render() {
-    const { value } = this.state;
     return (
       <div className="w-full my-6">
         <label className="text-black font-bold mb-2">
@@ -13,10 +8,11 @@ class PaymentDropdown extends Component {
         </label>
         <div className="relative">
           <select
+            name={this.props.name}
             className="w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 appearance-none  focus:bg-white"
             id="grid-state"
-            onChange={this.onChange}
-            value={value}
+            onChange={this.props.onChange}
+            value={this.props.payment_mode}
           >
             <option value="Pay Online">Pay Online</option>
             <option value="Pay Cash">Pay Cash</option>

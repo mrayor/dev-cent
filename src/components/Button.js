@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 class Button extends Component {
   render() {
     return (
-      <button className={this.props.class}>
+      <button onClick={this.props.onClick} className={this.props.class}>
         <div className="text-sm font-medium">{this.props.name}</div>
         <div className="ml-3">
           <i>
