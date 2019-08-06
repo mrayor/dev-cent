@@ -70,3 +70,23 @@
     left: 360px;
   }
 }
+@media (min-width: 768px) {
+  .bm-burger-button {
+    left: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  .bm-burger-button {
+    left: 950px;
+  }
+}
+@media (min-width: 1440px) {
+  .bm-burger-button {
+    left: 1350px;
+  }
+}
+@media (min-width: 2560px) {
+  .bm-burger-button {
+    left: 2500px;
+  }
+}

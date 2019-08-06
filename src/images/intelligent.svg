@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="intelligent" transform="translate(-2 -2)">
+    <path id="Path_29" data-name="Path 29" d="M35.833,16.75a2.92,2.92,0,0,0-2.917-2.917H27.745a8.744,8.744,0,0,0-16.491,0H6.083A2.92,2.92,0,0,0,3.167,16.75V36H2v1.75A1.75,1.75,0,0,0,3.75,39.5h31.5A1.75,1.75,0,0,0,37,37.75V36H35.833Zm-23.885-.7A7.582,7.582,0,1,1,25.322,21.6a12.064,12.064,0,0,0-2.9,7.4H16.576a12.36,12.36,0,0,0-2.939-7.449,7.539,7.539,0,0,1-1.689-5.5ZM22.417,31.333H16.583V30.167h5.833Zm-.1,1.167a1.753,1.753,0,0,1-1.65,1.167H18.333a1.754,1.754,0,0,1-1.65-1.167ZM4.333,16.75A1.75,1.75,0,0,1,6.083,15H10.93a8.612,8.612,0,0,0-.144.949,8.7,8.7,0,0,0,1.951,6.343,11.142,11.142,0,0,1,2.68,7.105v2.52a2.92,2.92,0,0,0,2.917,2.917h2.333a2.92,2.92,0,0,0,2.917-2.917V29.249a10.85,10.85,0,0,1,2.633-6.9,8.736,8.736,0,0,0,2.034-5.6A8.837,8.837,0,0,0,28.075,15h4.842a1.75,1.75,0,0,1,1.75,1.75V36H4.333Zm31.5,21a.583.583,0,0,1-.583.583H3.75a.583.583,0,0,1-.583-.583v-.583H35.833Z" transform="translate(0 -2.5)"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="1.167" height="2.333" transform="translate(18.917 2)"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="1.167" height="2.333" transform="matrix(0.866, -0.5, 0.5, 0.866, 12.87, 3.933)"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="1.167" height="2.333" transform="translate(8.599 8.631) rotate(-60.005)"/>
+    <rect id="Rectangle_25" data-name="Rectangle 25" width="1.167" height="2.333" transform="matrix(0.5, -0.866, 0.866, 0.5, 27.797, 19.714)"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="2.333" height="1.167" transform="translate(7.25 13.667)"/>
+    <rect id="Rectangle_27" data-name="Rectangle 27" width="2.333" height="1.167" transform="translate(29.417 13.667)"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="2.333" height="1.167" transform="translate(8.6 19.869) rotate(-29.995)"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="2.333" height="1.167" transform="matrix(0.866, -0.5, 0.5, 0.866, 27.797, 8.786)"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="2.333" height="1.167" transform="matrix(0.5, -0.866, 0.866, 0.5, 23.953, 5.37)"/>
+  </g>
+</svg>

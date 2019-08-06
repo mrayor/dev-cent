@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import devcent from "../../apis/devcent";
 import PropTypes from "prop-types";
 import CourseHeaderSection from "../sections/CourseHeaderSection";
 import CourseDescriptionSection from "../sections/CourseDescriptionSection";
 import Button from "../Button";
 import CourseDetail from "../CourseDetail";
+import Preloader from "../Preloader";
 
 class Course extends Component {
   state = {
@@ -17,12 +18,13 @@ class Course extends Component {
     trainingInstructor: "",
     featuredImage: "",
     price: "",
-    availableSeats: ""
+    availableSeats: "",
+    isLoading: true
   };
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    const res = await axios.get(` http://devcent.test/api/courses/${id}`);
+    const res = await devcent.get(`/${id}`);
     const course = res.data;
     this.setState({
       id: course.id,
@@ -36,6 +38,7 @@ class Course extends Component {
       availableSeats: course.available_seats,
       price: course.price
     });
+    this.setState({ isLoading: false });
   }
 
   render() {
@@ -49,8 +52,12 @@ class Course extends Component {
       trainingInstructor,
       featuredImage,
       price,
-      availableSeats
+      availableSeats,
+      isLoading
     } = this.state;
+    if (isLoading) {
+      return <Preloader />;
+    }
     return (
       <React.Fragment>
         <CourseHeaderSection image={featuredImage} title={name} />

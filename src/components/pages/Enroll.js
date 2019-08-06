@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import devcent from "../../apis/devcent";
 import CourseHeaderSection from "../sections/CourseHeaderSection";
 import EnrollForm from "../sections/EnrollForm";
 
@@ -14,7 +14,7 @@ class Enroll extends Component {
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    const res = await axios.get(` http://devcent.test/api/courses/${id}`);
+    const res = await devcent.get(`/${id}`);
     const course = res.data;
     this.setState({
       name: course.name,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../styles/sidemenu.css";
 import SidebarMenu from "./SidebarMenu";
@@ -10,27 +10,35 @@ import AllCourses from "./pages/AllCourses";
 import Enroll from "./pages/Enroll";
 import Course from "./pages/Course";
 import NotFound from "./pages/NotFound";
+import RegistrationComplete from "./pages/RegistrationComplete";
 
-function App() {
-  return (
-    <Router>
-      <div id="App">
-        <SidebarMenu />
-        <div>
-          <Navbar />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/courses" component={AllCourses} />
-            <Route exact path="/courses/:id/enroll" component={Enroll} />
-            <Route exact path="/courses/:id" component={Course} />
-            <Route component={NotFound} />
-          </Switch>
-          <Footer />
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div id="App">
+          <SidebarMenu />
+          <div>
+            <Navbar />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route
+                exact
+                path="/rcompleted"
+                component={RegistrationComplete}
+              />
+              <Route exact path="/courses" component={AllCourses} />
+              <Route exact path="/courses/:id/enroll" component={Enroll} />
+              <Route exact path="/courses/:id" component={Course} />
+              <Route component={NotFound} />
+            </Switch>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </Router>
-  );
+      </Router>
+    );
+  }
 }
 
 export default App;

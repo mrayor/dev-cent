@@ -13,11 +13,11 @@ const Event = props => {
         backgroundRepeat: "no-repeat",
         height: "auto"
       }}
-      className="bg-no-repeat bg-cover max-w-sm"
+      className="bg-no-repeat bg-cover max-w-sm md:max-w-full md:pb-3"
     >
       {" "}
       <div className="container mx-auto py-2 mb-8 flex-col justify-between items-center">
-        <div className="tracking-tight text-white p-4 ">
+        <div className="tracking-tight text-white p-4 md:mt-12 ">
           <h1 className="text-3xl font-extrabold">{props.title}</h1>
           <p className="text-sm font-normal leading-1">{props.date}</p>
           <div className="my-4">

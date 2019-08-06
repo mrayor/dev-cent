@@ -14,7 +14,7 @@ class PaymentDropdown extends Component {
             onChange={this.props.onChange}
             value={this.props.payment_mode}
           >
-            <option value="Pay Online">Pay Online</option>
+            {/* <option value="Pay Online">Pay Online</option> */}
             <option value="Pay Cash">Pay Cash</option>
             <option value="Pay to Bank">Pay to Bank</option>
           </select>

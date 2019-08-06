@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 const Feature = props => {
   return (
     <div className="flex justify-between">
-      <div className="flex-auto pr-4">
-        <img src={props.icon} alt="icon" />
+      <div className="flex-auto pr-4 max">
+        <img src={props.icon} alt="icon" style={{ maxWidth: "none" }} />
       </div>
       <div className="flex-auto">
         <h1 className="font-bold text-xl">{props.title}</h1>

@@ -3,7 +3,7 @@ import Input from "../Input";
 import DisabledInput from "../DisabledInput";
 import PaymentDropdown from "../PaymentDropdown";
 import Button from "../Button";
-import axios from "axios";
+import devcent from "../../apis/devcent";
 import ErrorNotification from "../ErrorNotification";
 
 class EnrollForm extends Component {
@@ -39,10 +39,7 @@ class EnrollForm extends Component {
       course_id: this.props.course_id
     };
 
-    const res = await axios.post(
-      "http://devcent.test/api/applicants/enroll",
-      newApplicant
-    );
+    const res = await devcent.post("/applicants/enroll", newApplicant);
     if (res.data.success === false) {
       const error = res.data.response;
       console.log(error);
@@ -58,7 +55,7 @@ class EnrollForm extends Component {
         payment_mode: "Pay Online",
         errors: {}
       });
-      window.location.href = "http://localhost:3000/";
+      window.location.href = "http://localhost:3000/rcompleted";
     }
   };
 

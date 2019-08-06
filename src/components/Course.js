@@ -6,7 +6,7 @@ class Course extends Component {
   render() {
     const { course } = this.props;
     return (
-      <div className="flex-shrink-0 max-w-sm rounded shadow-lg mx-4">
+      <div className="flex-shrink-0 max-w-sm rounded shadow-lg mx-4 md:my-4">
         <img className="w-full" src={course.featured_image} alt="pictures" />
         <div className="px-6 py-4 flex justify-between">
           <span className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">

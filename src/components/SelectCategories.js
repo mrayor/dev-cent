@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import devcent from "../apis/devcent";
 
 class SelectCategories extends Component {
   state = {
@@ -7,7 +7,7 @@ class SelectCategories extends Component {
   };
 
   async componentWillMount() {
-    const res = await axios.get("http://devcent.test/api/courses/categories");
+    const res = await devcent.get("/categories");
     // console.log(res.data);
     this.setState({ categories: res.data });
   }

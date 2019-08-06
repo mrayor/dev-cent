@@ -6,7 +6,7 @@ const UpcomingEventsSection = () => {
   return (
     <div
       id="upcoming-events"
-      className="container items-center bg-gray-100 pb-4"
+      className="items-center bg-gray-100 pb-4 container md:bg-white"
     >
       <div className="p-4">
         <div className="my-5">
@@ -14,8 +14,7 @@ const UpcomingEventsSection = () => {
           <h2 className="font-normal text-3xl -mt-3">events</h2>
         </div>
         <p className="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          veritatis consequatur ducimus, laborum cum corrupti?
+          Be the first to be aware of our upcoming events
         </p>
       </div>
       <Event
