@@ -169,7 +169,7 @@ const Footer = () => {
                     <i className="fas fa-envelope mr-4" />
                   </div>{" "}
                   <div>
-                    <Link to="mailto:info@devnet.net">info@devnet.com</Link>{" "}
+                    <Link to="mailto:info@devcent.net">info@devcent.net</Link>{" "}
                   </div>
                 </div>
               </li>

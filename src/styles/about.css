@@ -1,0 +1,64 @@
+.sp-100 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.sp-70-100 {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.sp-100-70 {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+/* ==========================
+    about us
+============================*/
+
+.abt-img {
+  position: relative;
+  z-index: 0;
+}
+
+.abt-img2 {
+  position: absolute;
+  right: -40%;
+  top: -35px;
+}
+
+.abt-img::after {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  right: 0;
+  height: 220px;
+  border-top-right-radius: 220px;
+  border-bottom-right-radius: 220px;
+  background-color: #ed1a97;
+  bottom: 0;
+  z-index: -1;
+}
+
+.list-1 li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 5px;
+  color: #000;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.list-1 li:not(:last-child) {
+  padding-bottom: 16.5px;
+}
