@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://devcent.test/api/courses"
+  baseURL: "https://devcent.net/v1/api/courses"
 });

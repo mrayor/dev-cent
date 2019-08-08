@@ -291,7 +291,7 @@ const Footer = () => {
               </li>
             </ul>
             <div>
-              <h3 className="text-2xl text-center">@devcentng</h3>
+              <h3 className="text-sm text-center">powered by tinacle</h3>
             </div>
           </div>
         </div>

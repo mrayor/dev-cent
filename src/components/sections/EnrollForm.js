@@ -18,7 +18,7 @@ class EnrollForm extends Component {
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  onClick = async () => {
+  onClick = async e => {
     const {
       first_name,
       last_name,
@@ -42,7 +42,7 @@ class EnrollForm extends Component {
     const res = await devcent.post("/applicants/enroll", newApplicant);
     if (res.data.success === false) {
       const error = res.data.response;
-      console.log(error);
+      // console.log(error);
 
       this.setState({ errors: error });
     } else {
@@ -55,7 +55,9 @@ class EnrollForm extends Component {
         payment_mode: "Pay Online",
         errors: {}
       });
-      window.location.href = "http://localhost:3000/rcompleted";
+      // e.preventDefault();
+      // window.location.replace("https://devcent.net/rcompleted");
+      window.location.href = "https://devcent.net/rcompleted";
     }
   };
 
@@ -128,6 +130,7 @@ class EnrollForm extends Component {
           value={payment_mode}
           onChange={this.onChange}
         />
+
         <Button name="Submit" onClick={this.onClick} />
       </div>
     );

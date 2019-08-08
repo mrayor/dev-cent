@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import axios from "axios";
 import Course from "./Course";
 import Preloader from "./Preloader";
+import devcent from "../apis/devcent";
 
 class Courses extends Component {
   state = {
@@ -10,7 +10,7 @@ class Courses extends Component {
   };
 
   async componentDidMount() {
-    const res = await axios.get("http://devcent.test/api/courses");
+    const res = await devcent.get("/");
     this.setState({ courses: res.data });
     this.setState({ isLoading: false });
   }
