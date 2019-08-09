@@ -8,7 +8,7 @@ import intelligent from "../images/intelligent.svg";
 const BookFeatures = () => {
   return (
     <div className="p-4">
-      <img src={booksImage} alt="books" className="mx-auto lg:hidden" />
+      <img src={booksImage} alt="books" className="mx-auto md:hidden" />
       <div className="my-5">
         <h3 className="font-bold text-3xl">take the first step</h3>
         <h2 className="font-normal text-3xl -mt-3">to learn with us</h2>

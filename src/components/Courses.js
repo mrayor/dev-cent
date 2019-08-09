@@ -46,7 +46,7 @@ class Courses extends Component {
           <div className="flex overflow-x-auto -mx-4 lg:flex-wrap mx-auto">
             <ReactSwipe
               className="carousel"
-              swipeOptions={{ continuous: false }}
+              swipeOptions={{ continuous: false, auto: 3000 }}
               ref={el => (reactSwipeEl = el)}
             >
               {courses.map(course => (
@@ -70,7 +70,7 @@ class Courses extends Component {
     } else {
       return (
         <React.Fragment>
-          <div className="flex overflow-x-auto -mx-4 lg:flex-wrap mx-auto">
+          <div className="flex overflow-x-auto -mx-4 xl:flex-wrap mx-auto">
             {courses.map(course => (
               <Course key={course.id} course={course} />
             ))}
@@ -82,5 +82,3 @@ class Courses extends Component {
 }
 
 export default Courses;
-
-// className = "flex overflow-x-auto pb-8 -mx-4 lg:flex-wrap mx-auto"
